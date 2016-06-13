@@ -1,0 +1,232 @@
+/* ==================================================================
+GLOBAL STYLES
+================================================================== */
+a,
+a:hover,
+a:focus,
+a:active { 
+	color:#f94876;
+}
+
+/* ==================================================================
+TYPOGRAPHY
+================================================================== */
+
+em { 
+	color:#f94876;
+}
+		
+/* ==================================================================
+HEADING
+================================================================== */	
+.heading span.line {
+	border-bottom: 2px solid #f94876;
+}
+
+/* ==================================================================
+FIXED NAVBAR
+================================================================== */
+ul.nav li a::before,
+ul.nav li a::after,
+ul.nav li a:hover::before,
+ul.nav li a:hover::after,
+ul.nav li a:focus::before,
+ul.nav li a:focus::after,
+ul.nav li.active a::before,
+ul.nav li.active a::after,
+ul.nav li.active a{
+	color:#f94876;
+}
+
+/* ==================================================================
+BRAND - NAVBAR, HOMEPAGE, FOOTER
+================================================================== */
+footer h1.logo { 
+	color:rgba(255,0,60,.7);
+}
+
+/* ==================================================================
+SECTIONS
+================================================================== */
+#spotlight1, #spotlight2, #blog{
+	border-top: 1px solid #fcc7d3;
+	background: #fff url(../../images/patterns/pattern_pink.png) repeat;
+}
+
+/* ==================================================================
+HOMEPAGE
+================================================================== */
+.intro .btn-lg:hover,
+.intro .learn{
+	border-color: #f94876; 
+	background: #f94876;
+}
+
+.intro .learn:hover{
+	color: #f94876;
+}
+
+/* ==================================================================
+FEATURES
+================================================================== */
+.hi-icon-effect .hi-icon:after {
+	background: #f94876;
+}
+
+.features-desc:hover h4 {
+	color: #f94876;
+}		
+				
+/* ==================================================================
+SPOTLIGHT 1
+================================================================== */
+.spotlight-link:hover{
+	border-color: #f94876;
+	background: #f94876;
+}
+
+/* ==================================================================
+NEWSLETTER
+================================================================== */
+.subs-submit,
+.subs-submit:hover,
+.subs-submit:focus,
+.subs-submit:active{
+	border-color: #f94876;
+	background: #f94876;
+}
+
+.success-message,
+.valid{
+	color: #f94876;
+}
+
+/* ==================================================================
+GALLERY
+================================================================== */
+a.thumbnail:hover{
+	border-color: #f94876;
+}
+
+a.thumbnail div {
+	background: rgba(231,0,54,0.75);
+}
+
+/* ==================================================================
+SPOTLIGHT 2
+================================================================== */
+.spotlight-features li:hover .hi-icon-2 {
+	background: #f94876;
+	box-shadow: 0 0 0 2px #f94876;
+}
+
+.spotlight-features li:hover p strong {
+	color: #f94876;
+}
+
+.spotlight-link:hover{
+	border-color: #f94876;
+	background: #f94876;
+}
+
+/* ==================================================================
+COMMENTS
+================================================================== */
+#comments .icon-title {
+	background: #f94876;
+}
+
+/* ==================================================================
+PRICES
+================================================================== */
+.circle-price{
+	background: #f94876;
+}
+
+.buy-now a:hover{
+	border-color: #f94876; 
+	background: #f94876;
+}
+
+/* ==================================================================
+BLOG
+================================================================== */
+.post .thumbnail:hover{
+	border-color: #f94876;
+}
+	
+.mask-overlay{
+	background: #e70036;
+}
+
+.blog-post-content h3 a:hover{
+	color: #f94876;
+}
+
+.post-blog h3 {
+	border-left: 2px solid #f94876;
+}
+
+.post-content h3 {
+	border-left: 0px;
+}
+
+.widget ul li a:hover {
+	color: #f94876;
+}
+
+.sidebar h3{
+	border-left: 2px solid #f94876;
+}
+
+.search-field .button-search:hover {
+	background-color: #f94876;
+}
+
+.tagcloud a:hover{
+	border-color: #f94876; 
+	background: #f94876;
+}
+
+/* ==================================================================
+TWITTER
+================================================================== */	
+.icon-twitter {
+	color: #f94876;
+}
+
+/* ==================================================================
+CONTACT
+================================================================== */
+.button-send:hover,
+.button-send:focus,
+.button-send:active{
+	border-color: #f94876;
+	background: #f94876;
+}
+
+.success-message-2{
+	color: #f94876;
+}
+	
+/* ==================================================================
+FOOTER
+================================================================== */
+.footer-content .back-top:hover{
+	background-color: #f94876;
+}
+
+/* ==================================================================
+RESPONSIVE
+================================================================== */
+@media (max-width: 992px) {
+	.sidebar{
+		border-top: 1px dashed #f94876;
+	}
+}
+
+@media (max-width: 480px) {	
+	.navbar-toggle:hover .icon-bar{
+		background-color: #f94876;
+	}
+}

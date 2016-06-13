@@ -1,0 +1,7 @@
+/vendor
+/storage
+/bootstrap
+/node_modules
+Homestead.yaml
+Homestead.json
+composer.lock

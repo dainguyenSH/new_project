@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+
+<head>
+
+	<!-- ==============================================
+	TITLE AND BASIC META TAGS
+	=============================================== -->
+	<meta charset="utf-8">
+	<title>AbbyCard - Ứng dụng thẻ thành viên</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!-- ==============================================
+	MOBILE METAS
+	=============================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<!-- ==============================================
+	WEB FONTS
+	=============================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		
+	<!-- ==============================================
+	CSS STYLES
+	=============================================== -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" media="screen" />
+   	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" type="text/css" media="screen"  />
+   	<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/elegant-font.css" type="text/css" media="screen" />	
+	<link rel="stylesheet" href="css/preloader.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/color/pink.css" type="text/css" media="screen" id="pagestyle" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" />
+	
+	
+	<!-- ==============================================
+	JS
+	=============================================== -->
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/device.min.js"></script>
+	
+	<!-- ==============================================
+	Favicons
+	=============================================== -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/apple-touch-icon-114-precomposed.html">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="imagesfavicon/apple-touch-icon-72-precomposed.html">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-57-precomposed.html">
+    <link rel="shortcut icon" href="images/favicon/favicon.png">
+	
+	<!-- DEMO Switcher
+  	================================================== -->
+    <link rel="stylesheet" href="styleswitcher/css/styleswitcher.css" />
+	
+	<script type="text/javascript">
+	function swapStyleSheet(sheet){
+		document.getElementById('pagestyle').setAttribute('href', sheet);
+	}
+	</script>
+		
+</head>
+
+<body>
+	
+	<!-- <div id="ut_styleswitcher">
+		<div style="position: relative;">
+            <a href="#" class="toggle"></a>
+            <h1>Homepage style</h1>
+	            <p>
+		     		<a class="button-switcher" href="index.html">Image version</a>
+		     		<a class="button-switcher" href="index_video.html">Video version <br/><span>(with cookies message)</span></a>
+		     		<a class="button-switcher" href="index_video2.html">Youtube version <br/><span>(with cookies message)</span></a>
+		     		<a class="button-switcher" href="index_video3.html">Vimeo version <br/><span>(with cookies message)</span></a>
+		     		<a class="button-switcher" href="index_abstract.html">Abstract version</a>
+		     		<a class="button-switcher" href="index_solid.html">Solid color version</a>
+	     		</p>
+	     	<h1>Blog page</h1>	
+	     		<p>
+	     			<a class="button-switcher" href="single.html">Blog Page</a>
+	     		</p>
+	     	<h1>Extra</h1>	
+	     		<p>
+	     			<a class="button-switcher" href="bonus_page/index.html">Bonus Page!!</a>
+	     		</p>
+	     	<h1>Color version</h1>
+	            <p>
+		     		<button class="cian" onclick="swapStyleSheet('css/color/cian.css')"></button>
+		     		<button class="pink" onclick="swapStyleSheet('css/color/pink.css')"></button>
+		     		<button class="green" onclick="swapStyleSheet('css/color/green.css')"></button>
+		     		<button class="yellow" onclick="swapStyleSheet('css/color/yellow.css')"></button>
+		     		<button class="blue" onclick="swapStyleSheet('css/color/blue.css')"></button>
+	     		</p>	
+            <p class="info">This Panel is only for demo purposes! </p>
+        </div>
+    </div> -->
+    
+	<!-- ==============================================
+	PRELOADER
+	=============================================== -->
+	<section class="main">
+		<div id="loading-animation">
+			<ul class="bokeh">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- ==============================================
+	NAVIGATION BAR
+	=============================================== -->
+	<nav class="navbar navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				</button>
+				<a class="logo" href="#homepage"><img src="images/logo/logo1.png" style="max-width: 130px"></a>
+			</div>
+						
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="cl-effect" href="#homepage">Home</a></li>
+					<li><a class="cl-effect" href="#features">Chức năng</a></li>
+					<li><a class="cl-effect" href="#newsletter">Tin tức</a></li>
+					<li><a class="cl-effect" href="#gallery">Thương hiệu</a></li>
+					<li><a class="cl-effect" href="#prices">Bảng giá</a></li>
+					<li><a class="cl-effect" href="#blog">Blog</a></li>
+					<li><a class="cl-effect" href="#contact">Liên hệ</a></li>
+					<li><a class="cl-effect page-login-merchant" href="#">Đăng nhập</a></li>
+				</ul>
+			</div> 
+		</div>
+	</nav>
+
+	<!-- ==============================================
+	BACKGROUND - IMAGE SLIDER
+	=============================================== -->
+	<header id="homepage">
+		<div class="container">
+			<div class="row">
+				<div class="intro col-md-5 animate" data-animate="fadeInLeft">
+					<h1>Tất cả thẻ thành viên trong 1 app <span class="intro-brand abbycard">AbbyCard</span></h1>
+					<h3>100+ thương hiệu</h3>
+					<!-- <a class="btn btn-default learn" href="#">AppStore</a>
+					<a class="btn btn-default btn-lg" href="#">PlayStore</a> -->
+					<a href="https://itunes.apple.com/us/app/abby/id1077992845?mt=8" target="_blank"><img src="images/appstore.png" width="30%" style="margin-right:5px"></a>
+					<a href="https://play.google.com/store/apps/details?id=com.icard.apper" target="_blank"><img src="images/chplay.png" width="30%"></a>
+				</div> <!-- end homepage intro -->
+				<div class="col-md-6 col-md-offset-1 animate" data-animate="fadeInRight">
+					<img class="img-responsive mockup-slider" src="images/mockups/ios/mockup_1.png" alt="" title="">
+				</div>
+			</div>
+		</div>
+		<a class="scroll-down" href="#features" title=""><img src="images/scroll-down.png" alt="" /></a>
+	</header> <!-- END SLIDER -->
+	
+	<!-- ==============================================
+	FEATURES
+	=============================================== -->
+	<section id="features">
+		<div class="container">
+			<div class="row">
+				<div class="heading col-md-8 col-md-offset-2 animate" data-animate="fadeIn">
+					<span class="section-name">Chức Năng</span>
+					<h2>Tại sao nên sử dụng ứng dụng <span class="abbycard">AbbyCards?</span></h2>
+					<span class="line"></span>
+					<p><em>Không cần thẻ giấy nữa</em>. Việc lưu trữ và đăng ký nhiều loại thẻ thành viên vào trong 1 ứng dụng duy nhất trở nên vô cùng đơn giản. Quản lý và gửi phản hồi cho thương hiệu bạn yêu thích.</p>
+				</div>
+			</div>
+			<div class="row">	
+				<!-- FEATURES LEFT SIDE -->
+				<div class="features-wrapper col-md-2 col-sm-3" >
+					<div class="features-desc col-md-12 col-sm-12 col-xs-6 animate" data-animate="flipInY">
+						<div class="cre-animate"  data-animation="fade-in" data-speed="1000" data-delay="0" data-offset="70%" data-easing="ease">
+						<div class="hi-icon-wrap hi-icon-effect hi-icon-effectb">
+							<div class="hi-icon" aria-hidden="true" data-icon="&#xe05d;"></div>
+						</div>
+						</div>
+						<h4>Lưu trữ</h4>
+						<p>Lưu trữ hầu hết các thẻ thành viên hiện tại của bạn vào 1 ứng dụng duy nhất.</p>
+					</div>
+					<div class="features-desc col-md-12 col-sm-12 col-xs-6 animate" data-animate="flipInY">
+						<div class="hi-icon-wrap hi-icon-effect hi-icon-effectb">
+							<div class="hi-icon" aria-hidden="true" data-icon="&#x4e;"></div>
+						</div>
+						<h4>10 Giây</h4>
+						<p>Đăng ký thành viên mới của các chương trình thẻ trong vòng 10 giây.</p>
+					</div>
+				</div>
+				<!-- END FEATURES LEFT SIDE -->
+				
+				<!-- FEATURES IMAGES -->						
+				<figure class="col-md-8 col-sm-6 features-images">
+					<img class="feat1 hidden-sm hidden-xs animate" data-animate="bounceInLeft" src="images/mockups/ios/mockup_2b.png" alt="" title="">
+					<img class="feat2 hidden-sm hidden-xs animate" data-animate="bounceInRight" src="images/mockups/ios/mockup_2a.png" alt="" title="">
+					<img class="feat3 animate" data-animate="bounceIn" src="images/mockups/ios/mockup_2c.png" alt="" title="">
+				</figure>
+				<!-- END FEATURES IMAGES -->
+				
+				<!-- FEATURES RIGTH SIDE -->
+				<div class="features-wrapper col-md-2 col-sm-3" >
+					<div class="features-desc col-md-12 col-sm-12 col-xs-6 animate" data-animate="flipInY">
+						<div class="hi-icon-wrap hi-icon-effect hi-icon-effectb">
+							<div class="hi-icon" aria-hidden="true" data-icon="&#x68;"></div>
+						</div>
+						<h4>Quản lý</h4>
+						<p>Truy cập & theo dõi mọi giao dịch tích lũy và đổi thưởng dễ dàng.</p>
+					</div>
+					<div class="features-desc col-md-12 col-sm-12 col-xs-6 animate" data-animate="flipInY">
+						<div class="hi-icon-wrap hi-icon-effect hi-icon-effectb">
+							<div class="hi-icon" aria-hidden="true" data-icon="&#xe031;"></div>
+						</div>
+						<h4>Riêng tư</h4>
+						<p>Nhận thông tin & gửi phản hồi với các thương hiệu yêu thích.</p>
+					</div>
+				</div>
+				<!-- END FEATURES RIGHT SIDE -->
+			</div> <!-- END ROW -->
+		</div> <!-- END CONTAINER -->	
+	</section> <!-- END FEATURES SECTION -->
+	
+	<!-- ==============================================
+	SPOTLIGHT 1
+	=============================================== -->
+	<section id="spotlight1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-5 col-md-offset-1 animate" data-animate="fadeInLeft">
+					<h3>Dành cho thương hiệu, merchants</h3>
+					<p>
+						Chỉ mất không quá 10 phút để khởi tạo 1 chương trình thẻ thành viên. Quản trị giao tiếp với thành viên, gửi tin nhắn trở nên dễ dàng hơn bao giờ hết. 
+					</p>
+					<a class="btn btn-default spotlight-link" href="http://abbycard.com/register">Đăng ký đối tác</a>
+				</div> <!-- end spotlight description -->
+				<figure class="col-md-7 col-sm-7 animate" data-animate="fadeInRight" >
+					<img class="img-responsive spot1-img" src="images/mockups/ios/mockup_3.png" alt="" title="">
+				</figure>
+			</div> <!-- END ROW -->					
+		</div> <!-- END CONTAINER -->
+	</section> <!-- END SPOTLIGHT1 SECTION -->
+	
+	<!-- ==============================================
+	NEWSLETTER
+	=============================================== -->
+	<section id="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="heading col-md-8 col-md-offset-2 animate" data-animate="fadeIn">
+					<span class="section-name">Tin Tức</span>
+					<h2>Đăng ký nhận thông tin từ <span class="abbycard">AbbyCard</span></h2>
+					<span class="line"></span>
+					<p>Cập nhật các thông tin dành riêng cho thành viên về các chương trình ưu đãi mới nhất, và từ các thương hiệu thành viên của AbbyCard</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 subscribe animate" data-animate="fadeIn">
+			    	<form class="form-inline" action="http://www.creabox.es/themes/cian/theme/php/sendmail.php" method="post">
+			    		<div class="col-md-8 col-md-offset-1 col-sm-12">
+							<input class="form-control subs-input" type="text" name="email" placeholder="Nhập email...">
+						</div>
+						<div class="col-md-1 col-sm-12">
+							<button type="submit" class="btn btn-default subs-submit">Gửi</button>
+						</div>
+                    </form>
+                    <div class="success-message"></div>
+                    <div class="error-message"></div>
+			    </div>							
+			</div> <!-- END ROW -->			
+		</div> <!-- END CONTAINER -->
+	</section> <!-- END NEWSLETTER SECTION -->		
+	
+	<!-- ==============================================
+	GALLERY
+	=============================================== -->
+	<section id="gallery">
+		<div class="container">
+			<div class="row">
+				<div class="heading col-md-8 col-md-offset-2 animate" data-animate="fadeIn">
+					<span class="section-name">Thương hiệu</span>
+					<h2>Các chương trình thành viên tiêu biểu trên <span class="abbycard">AbbyCard</span></h2>
+					<span class="line"></span>
+					<p>Đăng ký thành viên thương hiệu mới trong <em>10 giây</em>. Nhận thông tin ưu đãi từ các thương hiệu thành viên. Quản trị giao dịch. Đóng góp phản hồi cho thương hiệu.</p>
+				</div>
+			</div>
+			<div class="row gallery-images">	
+				<!-- GALLERY IMAGES -->						
+				<div class="col-xs-6 col-md-3 animate" data-animate="flipInY">
+				     <a href="images/gallery/img1-big.jpg" class="thumbnail portfolio-popup">
+				      <img src="images/gallery/img1.jpg" alt="" />
+				      <div><span>Thẻ thành viên <br/>BOO Cafe</span></div>
+				    </a>
+				</div>
+				<div class="col-xs-6 col-md-3 animate" data-animate="flipInY">
+				     <a href="images/gallery/img2-big.jpg" class="thumbnail portfolio-popup">
+				      <img src="images/gallery/img2.jpg" alt="" />
+				      <div><span>Thẻ thành viên <br/> CGV Cinema</span></div>
+				    </a>
+				</div>
+				<div class="col-xs-6 col-md-3 animate" data-animate="flipInY">
+				     <a href="images/gallery/img3-big.jpg" class="thumbnail portfolio-popup">
+				      <img src="images/gallery/img3.jpg" alt="" />
+				      <div><span>Thẻ thành viên <br/> Hotto Restaurant</span></div>
+				    </a>
+				</div>
+				<div class="col-xs-6 col-md-3 animate" data-animate="flipInY">
+				     <a href="images/gallery/img4-big.jpg" class="thumbnail portfolio-popup">
+				      <img src="images/gallery/img4.jpg" alt="" />
+				      <div><span>Thẻ thành viên <br/> ilike</span></div>
+				    </a>
+				</div>
+				<div class="col-xs-6 col-md-3 animate" data-animate="flipInY">
+				     <a href="images/gallery/img5-big.jpg" class="thumbnail portfolio-popup">
+				      <img src="images/gallery/img5.jpg" alt="" />
+				      <div><span>Thẻ thành viên <br/> Nana Shop</span></div>
+				    </a>
+				</div>
+				<div class="col-xs-6 col-md-3 animate" data-animate="flipInY">
+				     <a href="images/gallery/img6-big.jpg" class="thumbnail portfolio-popup">
+				      <img src="images/gallery/img6.jpg" alt="" />
+				      <div><span>Thẻ thành viên <br/> Peony Boutique</span></div>
+				    </a>
+				</div>
+				<div class="col-xs-6 col-md-3 animate" data-animate="flipInY">
+				     <a href="images/gallery/img7-big.jpg" class="thumbnail portfolio-popup">
+				      <img src="images/gallery/img7.jpg" alt="" />
+				      <div><span>Thẻ thành viên <br/> Peperonis</span></div>
+				    </a>
+				</div>
+				<div class="col-xs-6 col-md-3 animate" data-animate="flipInY">
+					 <a href="images/gallery/img8-big.jpg" class="thumbnail portfolio-popup">
+				      <img src="images/gallery/img8.jpg" alt="" />
+				      <div><span>Thẻ thành viên <br/> Puku Cafe</span></div>
+				    </a>
+				</div>
+				<!-- END GALLERY IMAGES -->
+			</div> <!-- END ROW -->
+		</div> <!-- END CONTAINER -->	
+	</section> <!-- END GALLERY SECTION -->
+	
+	<!-- ==============================================
+	SPOTLIGHT 2
+	=============================================== -->
+	<section id="spotlight2">
+		<div class="container">
+			<div class="row">
+				<figure class="col-md-6 col-sm-6 hidden-xs animate" data-animate="bounceInUp">
+					<img class="img-responsive spot2-img" src="images/mockups/ios/mockup_4.png" alt="" title="">
+				</figure>
+				<div class="col-md-6 col-sm-6 animate" data-animate="fadeInRight">
+					<h3>100+ thương hiệu có sẵn trên hệ thống</h3>
+					<ul class="spotlight-features">
+						<li>
+							<div class="hi-icon-2-wrap hi-icon-2-effect">
+								<div class="hi-icon-2" aria-hidden="true" data-icon="&#xe0ea;"></div>
+							</div>
+							<p>
+							<strong>60+ thương hiệu Cafe & Nhà hàng</strong><br/>
+							Các hình thức thẻ đang áp dụng: Thẻ tích điểm Vàng-Bạc-Đồng, thẻ stamp tích lũy nhiều lần được miễn phí hoặc giảm giá lần tiếp theo.
+							</p>
+						</li>
+						<li>
+							<div class="hi-icon-2-wrap hi-icon-2-effect">
+								<div class="hi-icon-2" aria-hidden="true" data-icon="&#xe028;"></div>
+							</div>
+							<p>
+							<strong>20+ thương hiệu Giải trí</strong><br/>
+							Các hình thức thẻ đang áp dụng: Thẻ tích điểm Vàng-Bạc-Đồng, thẻ stamp tích lũy nhiều lần được miễn phí hoặc giảm giá lần tiếp theo.
+							</p>
+						</li>
+						<li>
+							<div class="hi-icon-2-wrap hi-icon-2-effect">
+								<div class="hi-icon-2" aria-hidden="true" data-icon="&#xe00a;"></div>
+							</div>
+							<p>
+							<strong>20+ thương hiệu Mỹ phẩm & Làm đẹp</strong><br/>
+							Các hình thức thẻ đang áp dụng: Thẻ tích điểm Vàng-Bạc-Đồng, thẻ stamp tích lũy nhiều lần được miễn phí hoặc giảm giá lần tiếp theo.
+							</p>
+						</li> 
+					</ul>
+					<a class="btn btn-default spotlight-link" href="http://abbycard.com/register">Đăng ký thương hiệu</a>
+				</div> <!-- end spotlight description -->
+			</div> <!-- END ROW -->					
+		</div> <!-- END CONTAINER -->
+	</section> <!-- END SPOTLIGHT2 SECTION -->
+	
+	<!-- ==============================================
+	COMMENTS
+	=============================================== -->
+	<section id="comments">
+		<div class="container animate" data-animate="fadeIn">
+			<div class="row">
+				<div class="heading col-md-8 col-md-offset-2">
+					<div class="icon-title" aria-hidden="true" data-icon="&#x7b;"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="testimonials-slides">
+			     		<!-- Comment 1 -->
+                        <div>
+                        	<div class="testimonial">
+                            	<h3>Giải pháp này giải quyết rất tốt được vấn đề hiệu quả của chương trình chăm sóc khách hàng của thương hiệu BOO. Chúng tôi vô cùng hài lòng khi hợp tác với AbbyCard </h3>
+                            </div>
+                            <div class="client-name">
+                            	<p>Ngoc Phung | Marketing Manager @ BOO</p>
+                            </div>
+                        </div>
+                        <!-- Comment 2 -->
+                        <div>
+                        	<div class="testimonial">
+                            	<h3>Chúng tôi đã định sẽ triển khai chương trình thẻ thành viên trên nền thẻ Plastic truyền thống, nhưng ngay khi được biết tới AbbyCard chúng tôi đã quyết định chuyển qua dùng dịch vụ này luôn</h3>
+                            </div>
+                            <div class="client-name">
+                            	<p>Ha Nguyen | Brands Manager @ Zpizza</p>
+                            </div>
+                        </div>
+                        <!-- Comment 3 -->
+                        <div>
+                        	<div class="testimonial">
+                            	<h3>Trước đây tôi đc tặng rất nhiều thẻ thành viên của khoảng 20 thương hiệu khác nhau. Vấn đề lớn nhất là tôi thường xuyên quên chúng. Từ khi dùng AbbyCard tôi ko cần phải lo về chúng nữa, vì tất cả các thương hiệu yêu thích của tôi đều đã được tích hợp trong ứng dụng rồi.</h3>
+                            </div>
+                            <div class="client-name">
+                            	<p>Ha My | Staffs</p>
+                            </div>
+                       	</div>
+               		</div><!-- /testimonials-slides -->
+			    </div>							
+			</div> <!-- END ROW -->			
+		</div> <!-- END CONTAINER -->
+	</section> <!-- END COMMENTS SECTION -->
+	
+	<!-- ==============================================
+	PRICES
+	=============================================== -->
+	<section id="prices">
+		<div class="container">
+			<div class="row">
+				<div class="heading col-md-8 col-md-offset-2 animate" data-animate="fadeIn">
+					<span class="section-name">Bảng giá</span>
+					<h2>Bảng giá dịch vụ <span class="abbycard">AbbyCard</span></h2>
+					<span class="line"></span>
+					<p>Dù thương hiệu của bạn thuộc lĩnh vực Bán lẻ, Khách sạn, Cafe, Nhà hàng, Sym, Spa, Giải trí, Làm đẹp... đều có thẻ dễ dàng thiết lập chương trình thẻ thành viên <em>trong 10 phút</em>. Hãy bắt đầu <em>trải nghiệm bản Free</em></p>
+				</div>
+			</div>
+			<div class="row pricing-tables">	
+				<div class="col-md-3 col-sm-6 col-xs-12 animate" data-animate="fadeInUp">
+			        <!-- Pricing Table -->
+			        <div class="plan">
+			       		<div class="plan-heading">
+				            <h3>Free</h3>
+				            <p class="subtitle-price">1 cửa hàng</p>
+				            <div class="circle-price">
+				              <span>0k/m</span>
+				            </div>
+			        	</div>
+			       		<ul>
+				            <li><p><strong>Miễn phí</strong> khởi tạo</p></li>
+				            <li><p><strong>Chạy</strong> chương trình</p></li>
+				            <li><p><strong>1</strong> tk thu ngân</p></li>
+				            <li><p><strong>1</strong> ưu đãi</p></li>
+				            <li><p><strong>0</strong> tin nhắn</p></li>
+				            <li><p><strong>Không xem</strong> phản hồi</p></li>
+			          	</ul>
+			          	<div class="buy-now">
+			          		<a class="btn btn-default btn-sm" href="http://abbycard.com/register">Đăng ký</a>
+			          	</div>
+			    	</div> <!-- End Pricing Table -->
+				</div>
+				
+			    <div class="col-md-3 col-sm-6 col-xs-12 animate" data-animate="fadeInUp">
+			    	<!-- Pricing Table -->
+			        <div class="plan">
+			       		<div class="plan-heading">
+				            <h3>Starter</h3>
+				            <p class="subtitle-price">1 cửa hàng</p>
+				            <div class="circle-price">
+				              <span>199k/m</span>
+				            </div>
+			          	</div>
+			          	<ul>
+				            <li><p><strong>Miễn phí</strong> khởi tạo</p></li>
+				            <li><p><strong>Chạy</strong> chương trình</p></li>
+				            <li><p><strong>2</strong> tk thu ngân</p></li>
+				            <li><p><strong>2</strong> ưu đãi</p></li>
+				            <li><p><strong>2</strong> tin nhắn</p></li>
+				            <li><p><strong>Xem</strong> phản hồi</p></li>
+			          	</ul>
+				       	<div class="buy-now">
+				            <a class="btn btn-default btn-sm" href="http://abbycard.com/register">Đăng ký</a>
+				       	</div>
+			        </div> <!-- End Pricing Table -->
+				</div>
+			      
+			    <div class="col-md-3 col-sm-6 col-xs-12 animate" data-animate="fadeInUp">
+			    	<!-- Pricing Table -->
+			        <div class="plan" >
+			        	<div class="plan-heading">
+				            <h3>Premium 1</h3>
+				            <p class="subtitle-price">2 cửa hàng</p>
+				            <div class="circle-price">
+				              <span>439k/m</span>
+				            </div>
+			          	</div>
+			   			<ul>
+				            <li><p><strong>Miễn phí</strong> khởi tạo</p></li>
+				            <li><p><strong>Chạy</strong> chương trình</p></li>
+				            <li><p><strong>5</strong> tk thu ngân</p></li>
+				            <li><p><strong>5</strong> ưu đãi</p></li>
+				            <li><p><strong>5</strong> tin nhắn</p></li>
+				            <li><p><strong>Xem</strong> phản hồi</p></li>
+			          	</ul>
+				      	<div class="buy-now">
+				            <a class="btn btn-default btn-sm" href="http://abbycard.com/register">Đăng ký</a>
+				      	</div>
+			    	</div> <!-- End Pricing Table -->
+			    </div>
+			    
+			   	<div class="col-md-3 col-sm-6 col-xs-12 animate" data-animate="fadeInUp">
+			        <!-- Pricing Table -->
+			        <div class="plan" >
+			       		<div class="plan-heading">
+				            <h3>Premium 2</h3>
+				            <p class="subtitle-price">5 cửa hàng</p>
+				            <div class="circle-price">
+				              <span>+++</span>
+				            </div>
+			          	</div>
+			          	<ul>
+				            <li><p><strong>Miễn phí</strong> khởi tạo</p></li>
+				            <li><p><strong>Chạy</strong> chương trình</p></li>
+				            <li><p><strong>Unlimited</strong></p></li>
+				            <li><p><strong>20</strong> ưu đãi</p></li>
+				            <li><p><strong>Unlimited</strong></p></li>
+				            <li><p><strong>Xem</strong> phản hồi</p></li>
+			          	</ul>
+			          	<div class="buy-now">
+			            	<a class="btn btn-default btn-sm" href="http://abbycard.com/register">Đăng ký</a>
+			          	</div>
+			   		</div> <!-- End Pricing Table -->
+				</div>
+				
+			</div> <!-- END ROW -->
+		</div> <!-- END CONTAINER -->	
+	</section> <!-- END PRICES SECTION -->
+	
+	<!-- ==============================================
+	BLOG
+	=============================================== -->
+	<section id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="heading col-md-8 col-md-offset-2 animate" data-animate="fadeIn">
+					<span class="section-name">blog</span>
+					<h2>Tin tức từ <span class="abbycard">AbbyCard</span></h2>
+					<span class="line"></span>
+					<p>Cập nhật các bản tin và thông cáo mới từ AbbyCard. Các trang báo nói về AbbyCard và các nội dung tin tức trong ngành loyalty</p>
+				</div>
+			</div>
+			<div class="row">
+				<!-- FIRST POST -->
+				<div class="col-md-4 col-sm-4">
+					<div class="blog-post animate" data-animate="fadeInRight">
+						<div class="blog-post-thumb">
+							<div class="mask-overlay"></div>
+							<div class="social-icons">
+								<a href="#" aria-hidden="true" data-icon="&#xe0aa;"></a>
+								<a href="#" aria-hidden="true" data-icon="&#xe0ab;"></a>
+								<a href="#" aria-hidden="true" data-icon="&#xe0ac;"></a>
+							</div>
+							<img src="images/blog/image1.jpg" alt="" class="img-responsive" />
+						</div>
+						<div class="blog-post-content">
+							<h3><a href="single.html">Xu hướng thẻ tích điểm</a></h3>
+							<p>Thế giới được biết tới nhiều loại thẻ tích điểm như Rewards Card, Loyalty Card, Advantage Card, Points Card, nhưng hầu hết các loại hình này đều ứng dụng thẻ...</p>
+							<div class="blog-post-footer">
+								<ul>
+									<li><p><span aria-hidden="true" data-icon="&#xe025;" ></span>04 December 2015</p></li>
+									<li><p><span aria-hidden="true" data-icon="&#x77;" ></span>29</p></li>
+								</ul>
+								<div class="blog-post-plus">
+									<a href="single.html" aria-hidden="true" data-icon="&#x50;" ></a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div><!-- END FIRST POST -->
+				<!-- SECOND POST -->
+				<div class="col-md-4 col-sm-4">
+					<div class="blog-post animate" data-animate="fadeInRight">
+						<div class="blog-post-thumb">
+							<div class="mask-overlay"></div>
+							<div class="social-icons">
+								<a href="#" aria-hidden="true" data-icon="&#xe0aa;"></a>
+								<a href="#" aria-hidden="true" data-icon="&#xe0ab;"></a>
+								<a href="#" aria-hidden="true" data-icon="&#xe0ac;"></a>
+							</div>
+							<img src="images/blog/image2.jpg" alt="" class="img-responsive" />
+						</div>
+						<div class="blog-post-content">
+							<h3><a href="single.html">Loại hình thẻ tích điểm</a></h3>
+							<p>Tại Việt Nam hình thức thẻ tích điểm đang ngày càng trở nên phổ biến. Số lượng các thương hiệu, merchants đăng ký khởi tạo các chương trình cho riêng mình...</p>
+							<div class="blog-post-footer">
+								<ul>
+									<li><p><span aria-hidden="true" data-icon="&#xe025;" ></span>27 November 2015</p></li>
+									<li><p><span aria-hidden="true" data-icon="&#x77;" ></span>18</p></li>
+								</ul>
+								<div class="blog-post-plus">
+									<a href="single.html" aria-hidden="true" data-icon="&#x50;" ></a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div><!-- END SECOND POST -->
+				<!-- THIRD POST -->
+				<div class="col-md-4 col-sm-4">
+					<div class="blog-post animate" data-animate="fadeInRight">
+						<div class="blog-post-thumb">
+							<div class="mask-overlay"></div>
+							<div class="social-icons">
+								<a href="#" aria-hidden="true" data-icon="&#xe0aa;"></a>
+								<a href="#" aria-hidden="true" data-icon="&#xe0ab;"></a>
+								<a href="#" aria-hidden="true" data-icon="&#xe0ac;"></a>
+							</div>
+							<img src="images/blog/image3.jpg" alt="" class="img-responsive" />
+						</div>
+						<div class="blog-post-content">
+							<h3><a href="single.html">Thẻ chops/stamples</a></h3>
+							<p>Loại hình thẻ chops/stamples này được sử dụng phổ biến bởi các thương hiệu thời trang hoặc thương hiệu comestics, có 1-2 cửa hàng duy nhất. Cách thức hoạt động khá đơn giản...</p>
+							<div class="blog-post-footer">
+								<ul>
+									<li><p><span aria-hidden="true" data-icon="&#xe025;" ></span>11 November 2015</p></li>
+									<li><p><span aria-hidden="true" data-icon="&#x77;" ></span>33</p></li>
+								</ul>
+								<div class="blog-post-plus">
+									<a href="single.html" aria-hidden="true" data-icon="&#x50;" ></a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div><!-- END THIRD POST -->
+			</div> <!-- END ROW -->
+		</div> <!-- END CONTAINER -->
+	</section> <!-- END BLOG SECTION -->
+	
+	<!-- ==============================================
+	TWITTER
+	=============================================== -->
+	<section id="twitter">
+		<div class="container animate" data-animate="fadeIn">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="icon-twitter" aria-hidden="true" data-icon="&#xe094;"></div>
+					<ul id="twitter-feed" class="list-tweets"></ul>
+			    </div>							
+			</div> <!-- END ROW -->			
+		</div> <!-- END CONTAINER -->
+	</section> <!-- END TWITTER SECTION -->
+	
+	<!-- ==============================================
+	CONTACT
+	=============================================== -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="heading col-md-8 col-md-offset-2 animate" data-animate="fadeIn">
+					<span class="section-name">Liên hệ</span>
+					<h2>Phản hồi về dịch vụ <span class="abbycard">AbbyCard?</span></h2>
+					<span class="line"></span>
+					<p>Mọi ý kiến đóng góp của các bạn đều có ý nghĩa với chúng tôi. Vui lòng để lại lời nhắn tại đây hoặc gọi trực tiếp tới số <span class="abbycard">04 6259 2111</span> để được tư vấn</p>
+				</div>
+			</div>
+			<div class="row">	
+				<div class="col-md-10 col-md-offset-1 animate" data-animate="flipInY">	
+		        	<form action="#" id="contactform">
+		        		<div class="col-md-6">	
+		                	<input type="text" name="name" class="form-control" placeholder="Tên">
+		                </div>
+		                <div class="col-md-6">
+							<input type="text" name="email" class="form-control" placeholder="Email">
+						</div>
+						<div class="col-md-12">
+							<textarea name="message" rows="5" class="form-control" placeholder="Lời nhắn"></textarea>
+						</div>
+						<div class="col-md-12 send-div">
+							<button class="btn btn-default button-send" type="submit" value="Send">Gửi</button>
+		            		<div class="error-message-2"></div> 
+						</div>
+					</form>
+					<div class="success-message-2"></div>
+				</div> 	
+			</div> <!-- END ROW -->
+		</div> <!-- END CONTAINER -->	
+	</section> <!-- END CONTACT SECTION -->
+	
+	<!-- ==============================================
+	FOOTER
+	=============================================== -->
+	<footer>
+		<div class="container">
+			<div class="row footer-content">
+				<div class="col-md-10 col-md-offset-1 animate" data-animate="bounceIn">
+					<hr>
+					<a class="back-top" href="#" title="" aria-hidden="true" data-icon="&#x32;"></a>
+					<h1 class="logo abbycard">AbbyCard</h1>
+					<p>Copyright &#169; 2016 <a href="#" class="abbycard">AbbyCard</a> - A Product of Shoppie Pte. Ltd. All rights reserved.</p>
+					<ul class="footer-social">
+						<li><a class="facebook" target="_blank" href="https://www.facebook.com/AbbyCardVn" aria-hidden="true" data-icon="&#xe093;"></a></li>
+						<li><a class="skype" href="skype:leatuan92?chat" aria-hidden="true" data-icon="&#xe0a2;"></a></li>
+						<!-- <li><a class="twitter" href="#" aria-hidden="true" data-icon="&#xe094;"></a></li>
+						<li><a class="linkedin" href="#" aria-hidden="true" data-icon="&#xe09d;"></a></li>
+						<li><a class="pinterest" href="#" aria-hidden="true" data-icon="&#xe095;"></a></li>
+						<li><a class="googleplus" href="#" aria-hidden="true" data-icon="&#xe096;"></a></li>
+						<li><a class="dribbble" href="#" aria-hidden="true" data-icon="&#xe09b;"></a></li>
+						<li><a class="vimeo" href="#" aria-hidden="true" data-icon="&#xe09c;"></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer> <!-- END FOOTER SECTIONS -->
+		
+	<!-- BOOTSTRAP CORE JAVASCRIPT
+  	================================================== -->
+   	<!-- PLACED AT THE END OF THE DOCUMENT SO THE PAGES LOAD FASTER -->
+   	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+	<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/images.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	
+	<!-- DEMO Switcher
+  	================================================== -->
+  	<script src="styleswitcher/js/styleswitcher.js"></script>
+	
+</body>
+
+</html>

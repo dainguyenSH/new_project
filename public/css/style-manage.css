@@ -1,0 +1,78 @@
+/*
+ *	Manage style
+ */
+html, body {
+    height: 100%;
+}
+
+.btn-search-manage {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#background-manage {
+	width: 100%;
+	height: 100%;
+    background: #853f91; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#853f91, #dc2430); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#853f91, #dc2430); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#853f91, #dc2430); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#853f91, #dc2430); /* Standard syntax */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.manage {
+	min-height: 100%;
+    height:auto !important; /* cross-browser */
+    height: 100%; /* cross-browser */
+    padding-bottom: 20px;
+}
+
+.show-chop-manage {
+	background-color: #f1f2f3;
+    padding: 48px 26px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+
+.box-show-chop {
+	background: #853f91; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#853f91, #dc2430); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#853f91, #dc2430); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#853f91, #dc2430); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#853f91, #dc2430); /* Standard syntax */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	padding: 10px;
+    width: 280px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    height: 177px;
+}
+.sticker {
+	width: 40px;
+	margin: 6px;
+	height: 40px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	float: left;
+}
+.star-chops {
+	margin-top: 5px;
+}
+
+.limit-name-admin {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; /* fallback */
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    line-height: 22px !important;
+}
+
